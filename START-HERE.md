@@ -3,8 +3,8 @@
 **For you, the person.** Before this step you need two programs, VS Code and Git, and the Claude Code extension
 inside VS Code, signed in to a paid Claude plan. `guide/01-getting-started.md` explains how to install them, step by
 step. Then open the starter kit's folder in VS Code (File, Open Folder; the folder where you unpacked the kit, for
-example `C:\dev\starter-kit`), open any file in it, click the Spark icon (the small star-shaped icon at the top right
-of the editor) to open Claude Code, and type or dictate:
+example `C:\dev\ai-research-starter-kit-main`), open any file in it, click the Spark icon (the small star-shaped icon
+at the top right of the editor) to open Claude Code, and type or dictate:
 
 > Read START-HERE.md and set me up.
 

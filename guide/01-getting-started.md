@@ -5,7 +5,7 @@ are those the makers document (Microsoft for VS Code, Anthropic for Claude Code,
 as their pages read on 31 October 2026. Steps 1 to 6 are needed before the set-up; dictation, transcription and a
 GitHub account can wait. After step 6 you hand over to the agent, Claude Code: an AI program that reads the files in a
 folder, changes them when you ask, and runs small programs for you. `START-HERE.md` then does the rest with you,
-including installing Python (the programming language of the kit's four small scripts) if your computer lacks it.*
+including installing Python (the programming language of the kit's small scripts) if your computer lacks it.*
 
 ## Before you start
 
@@ -58,11 +58,11 @@ nothing else needs installing.
 
 ## Step 4. Open a folder, and trust it
 
-Unpack the starter kit into a folder you can find again (for example `C:\dev\starter-kit`), and open that folder
-with **File**, then **Open Folder...**. VS Code opens a new folder in **Restricted Mode**, a safety mode for unfamiliar
-files, and shows a banner across the top. Claude Code does not work in Restricted Mode. Trusting a folder lets VS Code
-and its extensions work with the files in it, so trust only folders you know. Click **Manage** in the banner, then the
-**Trust** button. You do this once for each folder.
+Unpack the starter kit into a folder you can find again, as step 2 of the README describes (on Windows,
+`C:\dev\ai-research-starter-kit-main`), and open that folder with **File**, then **Open Folder...**. VS Code opens a
+new folder in **Restricted Mode**, a safety mode for unfamiliar files, and shows a banner across the top. Claude Code
+does not work in Restricted Mode. Trusting a folder lets VS Code and its extensions work with the files in it, so trust
+only folders you know. Click **Manage** in the banner, then the **Trust** button. You do this once for each folder.
 
 ## Step 5. Open Claude Code
 
