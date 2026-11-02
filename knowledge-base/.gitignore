@@ -1,0 +1,8 @@
+# Python's caches
+__pycache__/
+*.pyc
+# files that must never leave this machine: add their folders here
+.env
+secrets*
+# Office's temporary lock files
+~$*

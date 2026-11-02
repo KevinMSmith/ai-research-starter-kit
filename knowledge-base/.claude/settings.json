@@ -1,0 +1,20 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit|NotebookEdit|Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "args": [
+              "${CLAUDE_PROJECT_DIR}/tools/hooks/guard_raw.py"
+            ],
+            "timeout": 10,
+            "statusMessage": "guard on raw/"
+          }
+        ]
+      }
+    ]
+  }
+}
