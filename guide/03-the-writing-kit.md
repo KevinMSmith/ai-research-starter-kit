@@ -20,17 +20,18 @@ understood on the first reading.
 
 ## What it is
 
-Four small files, installed once in your user folder, so that they apply in every project on the computer. In the
-table, `~` means your user folder: `C:\Users\<you>` on Windows, `/Users/<you>` on macOS. An **output style** is a text
+Four small files, installed once in your user folder, so that they apply in every project on the computer. On
+Windows, your user folder is `C:\Users\<you>`, where `<you>` is your user name; on a Mac it is `/Users/<you>`. The
+files go into its subfolder `.claude`, the folder in which Claude Code keeps its settings. An **output style** is a text
 that Claude Code adds to its instructions for every answer; a **skill** is a written procedure the agent follows when
 you type its command; and an **agent** in this table is a second, separate AI helper with one job:
 
 | File | Where it is installed | What it does |
 |---|---|---|
-| `user-instructions.md` | `~/.claude/CLAUDE.md` (the file every Claude Code conversation reads first) | says who you are, which fields you know, which you need explained, and twelve rules for writing for you |
-| `output-styles/plain-teaching.md` | `~/.claude/output-styles/`, and set as the default style | adds the same rules, with an example, to every answer in the conversation |
-| `skills/plain/SKILL.md` | `~/.claude/skills/plain/` | the command `/plain`: "explain that again, for a newcomer", for the previous answer or a named document |
-| `agents/second-reader.md` | `~/.claude/agents/` | an agent that reads a finished document as a newcomer and lists what it could not follow; it never edits |
+| `user-instructions.md` | `C:\Users\<you>\.claude\CLAUDE.md` (the file every Claude Code conversation reads first) | says who you are, which fields you know, which you need explained, and twelve rules for writing for you |
+| `output-styles/plain-teaching.md` | `C:\Users\<you>\.claude\output-styles\`, and set as the default style | adds the same rules, with an example, to every answer in the conversation |
+| `skills/plain/SKILL.md` | `C:\Users\<you>\.claude\skills\plain\` | the command `/plain`: "explain that again, for a newcomer", for the previous answer or a named document |
+| `agents/second-reader.md` | `C:\Users\<you>\.claude\agents\` | an agent that reads a finished document as a newcomer and lists what it could not follow; it never edits |
 
 
 ## How to install it
@@ -43,10 +44,10 @@ command and press Enter), check that it shows the starter kit's folder, type the
 
     python writing-kit/install_kit.py
 
-The script keeps anything already in your `CLAUDE.md` and in your settings file (`~/.claude/settings.json`), and makes
-a dated backup copy of the settings file first. The same line with ` --check` added at the end shows what is
-installed; with ` --uninstall` it removes it all again. A change takes effect in the next conversation, not the
-current one: open a new conversation in the Claude Code panel.
+The script keeps anything already in your `CLAUDE.md` and in your settings file
+(`C:\Users\<you>\.claude\settings.json`), and makes a dated backup copy of the settings file first. The same line with
+` --check` added at the end shows what is installed; with ` --uninstall` it removes it all again. A change takes
+effect in the next conversation, not the current one: open a new conversation in the Claude Code panel.
 
 ## How to make it yours
 
@@ -75,4 +76,4 @@ rules file, `AGENTS.md`, which the agent follows where the two differ.
 - **Output style**: a text that Claude Code adds to its instructions for every answer in a conversation.
 - **Skill**: a written procedure the agent follows when you type its command, such as `/plain`.
 - **Terminal**: a text window, here at the bottom of VS Code, in which you type a command and press Enter.
-- **User folder**: your own folder on the computer (`C:\Users\<you>`), written `~` in this guide.
+- **User folder**: your own folder on the computer, `C:\Users\<you>` on Windows, where `<you>` is your user name.

@@ -1,4 +1,4 @@
-"""Transcribe a recording of a meeting or a lecture on this computer, with the speakers labelled.
+r"""Transcribe a recording of a meeting or a lecture on this computer, with the speakers labelled.
 
 What it does: converts any audio or video file (m4a from a phone, mp3, wav, mp4, ...) to 16 kHz mono WAV with ffmpeg;
 finds who spoke when over the whole recording with NVIDIA's Nemotron 3 Diarization (up to eight speakers); cuts the
@@ -14,12 +14,12 @@ once from Hugging Face (`nemo-speech pull parakeet-tdt`, `nemo-speech pull nemot
 
 What it needs: Python 3.9 or later (standard library only); ffmpeg; NeMo-Speech.cpp 0.3.0 or later
 (https://github.com/NVIDIA/NeMo-Speech.cpp/releases), found from --nemo, the NEMO_SPEECH variable, the PATH, or
-C:\\dev\\nemo-speech\\*\\bin\\nemo-speech.exe.
+C:\dev\nemo-speech\*\bin\nemo-speech.exe.
 
 Usage:
     python tools/transcribe.py meeting.m4a
     python tools/transcribe.py meeting.m4a --names "Anna,Bo"
-    python tools/transcribe.py lecture.mp4 --out-dir C:/dev/inbox/my-project --force
+    python tools/transcribe.py lecture.mp4 --out-dir C:\dev\inbox\my-project --force
 
 --names replaces Speaker 1, 2, ... in the order in which they first speak. The speaker labels are anonymous: the
 models know voices, not people. (Favouring given terms, NeMo-Speech.cpp's --speech-context, is ignored for Parakeet:

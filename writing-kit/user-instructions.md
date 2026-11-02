@@ -1,9 +1,10 @@
 # How to write for me
 
-These instructions are installed in my user folder (as `~/.claude/CLAUDE.md`, the file Claude Code reads at the start of
-every conversation in every project) by `python writing-kit/install_kit.py` from my copy of the starter kit. To change
-them, edit this file in the starter kit and run the script again. A project's own rules file adds to them; where the
-two differ, follow the project's rules.
+These instructions are installed in my user folder as the file `.claude\CLAUDE.md` (on Windows,
+`C:\Users\<user name>\.claude\CLAUDE.md`). Claude Code reads that file at the start of every conversation in every
+project. The command `python writing-kit/install_kit.py` installs it from my copy of the starter kit. To change the
+instructions, edit this file in the starter kit and run the command again. A project's own rules file adds to them;
+where the two differ, follow the project's rules.
 
 ## Who reads what you write
 
