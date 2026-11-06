@@ -83,7 +83,10 @@ Each rule exists because an agent gets it wrong without it.
    before the material has been read is wrong.
 10. **The product is judged, not the plan.** A slide deck is rendered and read, a text is built and read, a
     calculation is recalculated, before it is called done.
-11. ‹Add each correction the author makes twice, the same day, with its reason.›
+11. **A check that finds nothing is tested first.** Before the agent reports that a search, a filter or a
+    classification it wrote found nothing ("no room exceeds the limit"), it runs the check on a case that should
+    trigger it. *Why:* a check that cannot fire and a check that finds no case give the same empty answer.
+12. ‹Add each correction the author makes twice, the same day, with its reason.›
 
 ## Terms in force
 
@@ -103,8 +106,13 @@ author corrects one.
 3. **Commit after each unit of work**, with a message that says what and why. Git keeps every earlier version.
 4. **A session ends with `/close`**: one block appended to the month's file in `log/`, `PROGRESS.md` rewritten (never
    appended to, one screen), a commit, and a push when a remote exists.
-5. **A correction becomes a rule the same day.** When the author corrects the same thing twice, the rule goes into this
-   file, with its reason, and the decision into `DECISIONS.md`.
+5. **A correction becomes a rule the same day, in the place where it will act.** When the author corrects the same
+   thing twice, the rule goes where it fires at the right moment: a step of one task (depositing, integrating, closing)
+   goes into that skill; a rule that a script could enforce (a folder never written, a command never run) is proposed
+   to the author as a hook or a setting; only a rule for ordinary work comes into this file, as one line with its
+   reason. The story of the correction goes into `DECISIONS.md`. *Why:* every line of this file is read in every
+   session, and a file full of rules that apply only now and then is followed less reliably. Anthropic suggests
+   about 200 lines as a rough guide; it is not a limit.
 6. **Research is fanned out.** A question that needs online sources goes to a background agent with a brief in
    `plan/` that names the one file it writes in `research/`; it quotes every source with its address and the date read,
    marks what it could not verify, and runs no git command. The session reads the file and writes its index line.

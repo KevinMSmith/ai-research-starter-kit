@@ -68,8 +68,8 @@ shows where its sources are weak or missing.
   several messages of one thread would get the same name, add each message's date to the end of its name. Download
   a Teams transcript from the meeting's chat after the meeting (the organiser can download it as a .vtt file).
   Deposit once a week, or when you need the material.
-- **Correct by dictation, and when you correct the same thing twice:** "Write that into AGENTS.md as a rule, with the
-  reason."
+- **Correct by dictation, and when you correct the same thing twice:** "Make that a rule, with the reason, where it
+  will act." The agent chooses the skill, the setting or `AGENTS.md`, and tells you which.
 - **One task, one conversation.** Start with `/start`, end with `/close`, and begin the next task in a new
   conversation.
 - **Judge the product.** Open the document, the slides or the table before you read the agent's account of it.

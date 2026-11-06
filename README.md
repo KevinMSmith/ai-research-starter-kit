@@ -45,6 +45,72 @@ The kit sets you up to do three things with Claude Code.
    kit tells it once who you are and which fields it must explain to you. It then writes complete statements with
    their background.
 
+## Which kit, and when: this one or Johannes Wildfeuer's
+
+There are two kits, meant to be used one after the other, and this one is the first. Johannes Wildfeuer (DTU) wrote
+the second, the [AI research setup kit](https://github.com/jnwildfire/ai-research-setup-kit). It is a separate
+project, in his own repository on GitHub. It adds what a researcher needs once their work spans several projects and
+several places where files are kept. The two kits differ in the situation they are made for and in what you need to
+know before you start.
+
+**What both do better than a chat window.** Today most researchers use AI through a chat window: they paste in a
+document or a question, get an answer, and the conversation is gone when they close it. Three things go wrong with
+that. The answer does not say which passage of which document it rests on, so you cannot check it. Nothing carries
+over: each new chat starts from nothing, and you explain your project again. And a correction you make is forgotten,
+so you make it again next week. Both kits answer these three problems in the same way:
+
+- Your material is kept in files on your own computer, and the originals are never changed.
+- Every statement the agent writes points to the passage it comes from.
+- Your corrections are written into a rules file in the project's folder. The agent reads that file at the start of
+  every **session** (each time you open a conversation with it), so a correction made once holds from then on.
+
+In my judgement, from three months of working this way and without a measurement, this does not save time overall.
+It moves the time from writing to reading and checking, and the result is something you can check and stand behind.
+
+**Use this kit** when you are new to working with an agent, or when your material belongs to one project at a time.
+It needs no programming, and the agent types every command for you. It builds one knowledge base for each project: a
+folder in which the agent keeps your originals, an index of each, and pages in which every statement is traced to its
+source. Three examples:
+
+- **A research project with partners.** The transcripts of the project meetings, the reports, the measurement data
+  and your own dictated notes go into one knowledge base. Before the next meeting you ask what was decided on the
+  ventilation strategy and who disagreed. Every line of the answer names the meeting and the paragraph.
+- **A course.** Your lecture notes, your slides, the standards you teach from and your dictated reactions to last
+  year's exam go into one knowledge base. The agent drafts exercises and slides from it, and you check them against
+  the sources.
+- **A proposal or a report.** The funding call (the published text that says what a proposal must contain), the
+  earlier reports and the partners' e-mails go in. The agent drafts a text in which every claim carries a footnote
+  you can follow.
+
+**Use Johannes's kit** when you have used this kit, or something like it, and your work has outgrown one knowledge
+base per project. Two signs show it: one piece of work needs files from several places (code on your computer, data
+on DTU's network drive, notes in a notes program), or you work on several projects at once and want one set-up for
+all of them. His kit assumes that you know what a terminal is. It keeps three kinds of material in three places that
+are never mixed: code in Git, data on the institution's drive, and notes in an **Obsidian vault** (a folder of
+linked notes, read with the free program Obsidian). It adds four things:
+
+- a **guard** over all three places: a small program that stops the agent from changing an original file, from
+  reading parts of the cloud drive it should not, and from running the Git commands that lose work;
+- **skills**, sets of written instructions the agent follows for one recurring task: turning a meeting transcript
+  into a note, keeping a daily note and a list of tasks, and writing a note on each paper from your **reference
+  manager** (a program such as Zotero that stores your papers and their citations);
+- rules for tasks the agent carries out on its own overnight, while you are away from the computer;
+- tools that keep a laptop running through such a task.
+
+Three examples:
+
+- **A PhD project** with analysis code in several repositories, measurement data on DTU's drive, and notes on
+  meetings and papers in a vault. The agent works across all three, and it cannot change an original data file.
+- **Weekly supervision meetings.** Each transcript becomes a meeting note with the decisions at the top, and the task
+  list is updated from it. Before the next meeting, the agent writes a one-screen summary of the meetings so far.
+- **A simulation or a long data analysis overnight.** The agent works on its own, and it writes only in the folders
+  that the plan you approved names. A laptop would otherwise go to sleep and stop the work, so the kit keeps it
+  awake, and it pauses the work when the battery runs low. In the morning the agent leaves a report of what it did
+  and what it needs you to decide.
+
+**In short:** begin with this kit. Move to Johannes's when one of the two signs above applies to you, and install
+from it only the parts that meet a need your work actually has.
+
 ## What you need before you start
 
 - **A computer with Windows or macOS.** On a DTU laptop, try the installers in guide 01 first. According to their
@@ -237,6 +303,7 @@ project. Add to it what your own material needs, when you need it. The agent can
 - **Knowledge base**: one project's folder, in which every original is kept unchanged and every statement the agent
   writes is traced to its source.
 - **Markdown**: plain text with a few marks for headings, bold type and lists. Files in Markdown end in `.md`.
+- **Obsidian vault**: a folder of linked notes in Markdown, read and written with the free program Obsidian.
 - **Python**: a programming language. The kit's five small programs are written in it.
 - **Repository**: a project folder kept together with the record of every change made to it.
 - **Spark icon**: the small star-shaped icon that opens the Claude Code panel. It appears at the top right of the VS

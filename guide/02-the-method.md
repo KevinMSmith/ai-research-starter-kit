@@ -99,6 +99,12 @@ each exist because an agent gets the thing wrong without them.
   about a named person is personal data under the GDPR (the General Data Protection Regulation of the European Union).
 - **Judge the product.** A slide deck is opened and read slide by slide, a text is read, a calculation is
   recalculated, before it is called done.
+- **Test a check that finds nothing.** When the agent writes a search or a filter of its own ("which rooms exceed
+  1 000 ppm?") and it returns nothing, it first runs it on a case that should be found. A filter with a wrong sign
+  and a filter that finds no case give the same empty answer.
+- **Ask before the git commands that lose work.** The template's settings make the agent ask you before it runs the
+  few Git commands that throw away work no commit has saved, or rewrite what is on GitHub (`git reset --hard`,
+  `git clean`, a forced push, among others). Say no unless you asked for it.
 
 ## How a round of work runs
 
@@ -109,9 +115,14 @@ writes down every decision it took on your behalf, each with a recommendation an
 product first, not the plan**, and say what is wrong, by dictation. You strike only the decisions you disagree with.
 Then the next round.
 
-**Corrections become rules, the same day.** When you correct the same thing twice, ask the agent to write the rule
-into `AGENTS.md`, with its reason. A rule that lives only in a conversation is lost when the conversation ends; a rule
-in the file is read by every later conversation.
+**Corrections become rules, the same day.** When you correct the same thing twice, ask the agent to make it a rule,
+with its reason. A rule that lives only in a conversation is lost when the conversation ends; a rule in a file is read
+by every later conversation. The agent puts the rule where it will act: a step of one task (depositing, writing a
+page) goes into that task's skill, which is read only when the task runs; a rule a script could enforce becomes a
+setting or a hook, after your yes; only a rule for all ordinary work goes into `AGENTS.md`. The reason is that
+`AGENTS.md` is read in every conversation, and a file crowded with rules that apply only now and then is followed less
+reliably. Anthropic suggests about 200 lines as a rough guide (Claude Code documentation, "How Claude remembers your
+project", read 6 November 2026); a longer file is fine when its rules all apply to ordinary work.
 
 ## Why the files are the memory
 
