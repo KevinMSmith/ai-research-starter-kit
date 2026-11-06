@@ -48,6 +48,18 @@ their head. The documents are already files; the other two become files only if 
 
 Everything flows one way, and nothing downstream is written without a trace back to an original.
 
+The diagram shows the way a file travels, from the inbox on the left to the products on the right. The table below it
+says who writes each layer.
+
+```mermaid
+flowchart LR
+    I["Inbox<br/>files as they arrive"] -->|deposit| R["raw/<br/>originals, never changed"]
+    R -->|extract| S["sources/<br/>plain text with numbered<br/>paragraphs, and a card each"]
+    S -->|integrate| K["kb/<br/>pages, every statement<br/>with its source"]
+    K --> P["products/<br/>papers, reports, slides"]
+    G["guard hook"] -. refuses any change .-> R
+```
+
 | Layer | What it holds | Who writes it | Changes? |
 |---|---|---|---|
 | inbox (outside) | files as they arrive, under their original names | you | yes |
@@ -114,6 +126,19 @@ and write one file each, with the address and date of every source); it reads, c
 writes down every decision it took on your behalf, each with a recommendation and its reason. You then **open the
 product first, not the plan**, and say what is wrong, by dictation. You strike only the decisions you disagree with.
 Then the next round.
+
+The diagram shows one round. The arrow back from your correction to the rules is what makes the next round better
+than this one.
+
+```mermaid
+flowchart LR
+    D["You dictate:<br/>what you think,<br/>what you want made"] --> W["The agent works:<br/>reads, researches,<br/>drafts, builds"]
+    W --> J["You open the product<br/>and say what is wrong"]
+    J --> C["Your correction"]
+    C -->|"made twice"| RU["A rule, in the place<br/>where it will act"]
+    RU -. read in every later session .-> W
+    C --> D
+```
 
 **Corrections become rules, the same day.** When you correct the same thing twice, ask the agent to make it a rule,
 with its reason. A rule that lives only in a conversation is lost when the conversation ends; a rule in a file is read

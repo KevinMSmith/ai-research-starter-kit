@@ -108,6 +108,18 @@ Three examples:
   awake, and it pauses the work when the battery runs low. In the morning the agent leaves a report of what it did
   and what it needs you to decide.
 
+The chart below shows the same choice as a decision. Read it from the top.
+
+```mermaid
+flowchart TD
+    A["Do you already work with an AI agent?"] -->|No| K1["Use this kit"]
+    A -->|Yes| B["Does one piece of work need files from several places:<br/>code, a network drive, a notes program?"]
+    B -->|Yes| K2["Use Johannes's kit, after this one"]
+    B -->|No| C["Do you work on several projects at once<br/>and want one set-up for all of them?"]
+    C -->|Yes| K2
+    C -->|No| K1
+```
+
 **In short:** begin with this kit. Move to Johannes's when one of the two signs above applies to you, and install
 from it only the parts that meet a need your work actually has.
 

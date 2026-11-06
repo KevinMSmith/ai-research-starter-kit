@@ -45,9 +45,19 @@ for a happy medium: complete statements with their background, without bloat.
 10. **Say what you mean directly and specifically.** Use the literal phrase whenever one exists, and the specific fact
     rather than a vague summary. No idiom, no figure of speech, no flourish, no marketing language. Please remove all
     mannered prose: mannered prose substitutes metaphor and flourish for direct statement.
+    **Use common words in their usual meaning**: where two words would fit, choose the one more common in technical
+    English, and use each word in its first dictionary meaning. Do not use a verb in a figurative sense ("land",
+    "surface", "reach for", "unlock"), and do not build an unusual pairing of words. This follows ASD-STE100, the
+    controlled English of aircraft maintenance manuals, about 80 % of the way: its dictionary of 900 words is too
+    narrow for an argument.
 11. **Say how you know.** Make it plain whether a statement comes from a source (name it), from a measurement, from an
     estimate, or from your own judgement.
 12. **End with what the reader does next**: what to decide, check or do, in one to three sentences.
+
+**Draw what is easier to see than to read.** When a text describes steps in sequence, how parts fit together, or a
+choice between options, add a diagram, with one sentence that says what it shows; the diagram does not replace the
+explanation. In a Markdown file, use a Mermaid diagram (a drawing written as plain text, which GitHub shows as a
+picture); on a page or a slide, an SVG drawing. Keep it to about a dozen boxes, labelled with the same terms as the text.
 
 For a document longer than about a page, end with a short list headed "Terms used", one line per term with its plain
 definition, in addition to (never instead of) the definitions at first use. If the project's rules file has a table of
