@@ -8,4 +8,5 @@
 source with its address, its author, the date it shows and the date you read it. Mark what you could not verify. Put
 your own judgement under a heading `### Inferred`. Prefer sources from the last three months, and primary sources
 (the maker's documentation, the paper, the law) over summaries. End with a short section "What this means for the
-project".
+project". The author reads the file directly, so write it in the register of `AGENTS.md`: complete sentences, each term
+from outside the author's field defined where it first appears.
