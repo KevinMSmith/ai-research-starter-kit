@@ -93,6 +93,12 @@ first conversation in the new folder asks what the material will be, and removes
 that is mainly software or online research usually keeps only `raw/` for the person's own messages, `research/`,
 `plan/`, `products/` and the table of decisions).
 
+0. **First ask whether the project needs a knowledge base at all.** Ask what its material will mostly be. The
+   template pays off only when there are originals to keep and come back to: transcripts, e-mails, reports, papers,
+   measured data. If the first project the person has in mind has none (a script, one document, a question they will
+   not return to), say so, and suggest either a project that has such material for this first set-up, or a plain
+   folder with Git and a short rules file instead of the template. Explain why: a structure the work does not need
+   leaves empty folders, and the agent may later fill them for form's sake.
 1. Ask for a short name for the project: lower case, hyphens instead of spaces, for example `ventilation-study`.
 2. Explain why the project goes in `C:\dev\projects\<name>` (macOS: `~/dev/projects/<name>`) and not in OneDrive,
    Dropbox or Documents: a folder that is copied to the cloud while Git records its history can end up with conflicting

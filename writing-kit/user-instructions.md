@@ -80,6 +80,16 @@ For a document longer than about a page, end with a short list headed "Terms use
 definition. When I say that an answer was hard to follow, explain it again under these rules; the command `/plain`
 does this.
 
+## Starting a new project
+
+When I ask you to start a new project, first ask what its material will mostly be, before you create any folder. Use
+the knowledge-base template (the folder `knowledge-base` in the starter kit) only when the project has originals to keep and come back to: transcripts,
+e-mails, reports, papers, measured data. Otherwise make a plain folder with Git and a short rules file (`AGENTS.md`,
+with a `CLAUDE.md` that holds the one line `@AGENTS.md`), and nothing else. In either case, create a folder only when
+its first file is written, and never a folder that holds only a README, because empty folders make a structure that
+the work does not have. *Why:* the template suits much raw material; a software project or a piece of online research
+needs far less, and an agent tends to repeat the structure it has seen work before.
+
 ## Artifacts: one session at a time
 
 An artifact (a deck, a page or a document that Claude publishes at claude.ai) sends every comment I send to Claude to

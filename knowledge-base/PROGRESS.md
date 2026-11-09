@@ -32,7 +32,8 @@ If the author declines a step, or a step fails, leave it in this list marked as 
    mainly software, or mainly online research, does not need `sources/` and `kb/` until such material arrives; its
    research files, plans and products can cite their sources directly. Two parts are kept in every project: the
    author's own messages deposited word for word (class `K`), and `DECISIONS.md`, each decision with its reason.
-2. **The blanks.** Remove the folders the author chose to leave out, and write a short section "What this base mainly
+2. **The blanks.** Remove the folders the author chose to leave out, and also any kept folder that the first month
+   will not use (the author can copy it back from the kit's template when its first file arrives), and write a short section "What this base mainly
    is" at the top of `AGENTS.md` that names the layers kept and why, so that a later session does not fill the others
    for form's sake. Fill in, from the answers: `AGENTS.md` (the project's title and paragraph, rule 7 on who is never
    named, and the section "The author": offer, as the suggested answer, what the author's own instructions in the user
