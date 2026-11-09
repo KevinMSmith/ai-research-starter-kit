@@ -4,7 +4,7 @@
 short conversations with the agent. Each starts with `/start` and ends with `/close`: commands that come with the
 template, which you type in the Claude Code panel. `/start` makes the agent read where the work stands and check the
 originals; `/close` makes it write the day's record and save the step in the project's history. `/ask` and `/plain`,
-used below, are commands of the same kind.*
+used below, are commands of the same kind. The last section is a review of the set-up after about a month.*
 
 ## Before day 1
 
@@ -75,3 +75,17 @@ shows where its sources are weak or missing.
 - **Judge the product.** Open the document, the slides or the table before you read the agent's account of it.
 - **Ask for the decisions.** "List every decision you took without asking, each with your recommendation and the
   reason, so that I strike only those I disagree with."
+
+## After a month
+
+After about a month, the set-up will not fit your work exactly. Some folders of the template will still be empty,
+some steps you will be doing by hand every week, and some corrections you will have made more than once. Ask the
+agent to look at how the knowledge base has actually been used, and to propose changes:
+
+> Read the log, PROGRESS.md, DECISIONS.md and the folder tree of this project. Tell me which folders and which skills
+> I have not used, which steps I keep doing by hand, and which corrections I have made more than once. Propose what to
+> remove, what to add to the rules file, and what to make a skill, each with its reason. Change nothing until I agree.
+
+Strike the proposals you disagree with, as with any other list of decisions. Repeat the review when the work changes,
+for example when a project moves from collecting material to writing. If you use Johannes Wildfeuer's kit, its skill
+"workflow health" does the same job across all your projects.

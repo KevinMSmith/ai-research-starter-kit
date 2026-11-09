@@ -123,6 +123,13 @@ flowchart TD
 **In short:** begin with this kit. Move to Johannes's when one of the two signs above applies to you, and install
 from it only the parts that meet a need your work actually has.
 
+**When you need neither kit's structure.** A knowledge base is worth building when a project has originals to keep
+and to come back to: transcripts, reports, data, papers. Much work with Claude Code has none. Writing a short script,
+asking about a standard, revising one document, or a literature question you will not return to needs only a folder
+and a conversation. Open Claude Code in that folder and ask. The writing kit applies there too, because it is
+installed for all your work. If you are unsure, start without the structure. Add a knowledge base when you notice
+that you are explaining the same background to the agent for the third time.
+
 ## What you need before you start
 
 - **A computer with Windows or macOS.** On a DTU laptop, try the installers in guide 01 first. According to their
@@ -238,7 +245,7 @@ files on the left of the window. To see a Markdown file there with its headings 
 | [guide/01-getting-started.md](guide/01-getting-started.md) | How to install VS Code, Git and Claude Code, step by step, with a table of what to do when something does not work. It also covers the programs for dictation and transcription, which can wait. |
 | [guide/02-the-method.md](guide/02-the-method.md) | Why the knowledge base is built as it is: why originals are kept unchanged, and why every statement is traced to its source. About fifteen minutes to read. |
 | [guide/03-the-writing-kit.md](guide/03-the-writing-kit.md) | What the writing kit does, and how to change it to suit you. About five minutes. |
-| [guide/04-the-first-week.md](guide/04-the-first-week.md) | The first five days after the set-up, with the words to type or dictate (step 5 above). |
+| [guide/04-the-first-week.md](guide/04-the-first-week.md) | The first five days after the set-up, with the words to type or dictate (step 5 above), and a review of the set-up after a month. |
 | [guide/05-learning.md](guide/05-learning.md) | The few sources I learn from, and the videos to start with. About five minutes, then 8 to 14 minutes for each video. |
 | [guide/06-data-and-the-rules.md](guide/06-data-and-the-rules.md) | What the agent can reach on your computer, what the rules say, and what to decide before you give it other people's material (step 1 above). |
 | [prompts.md](prompts.md) | Requests to the agent that have worked well for me, ready to copy and adapt. Among them: investigating an idea, making a report in two messages (a plan first, then the text), and reviewing what the agent made. |

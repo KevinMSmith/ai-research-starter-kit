@@ -47,6 +47,12 @@ longer sees. You decide what to change.
 
 or, for a document: `/plain ‹file›`.
 
+## After a month: fitting the set-up to how you work
+
+> Read the log, PROGRESS.md, DECISIONS.md and the folder tree of this project. Tell me which folders and which skills
+> I have not used, which steps I keep doing by hand, and which corrections I have made more than once. Propose what to
+> remove, what to add to the rules file, and what to make a skill, each with its reason. Change nothing until I agree.
+
 ## Before sending a document to someone
 
 > Ask the second-reader agent to read ‹file›. The reader already knows ‹…›. Then fix what it finds that is real.

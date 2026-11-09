@@ -26,7 +26,15 @@ If the author declines a step, or a step fails, leave it in this list marked as 
    on what the project is and what it should produce; who must never be named in it (for example students, residents, patients); and where the inbox should be (suggest
    `C:\dev\inbox\<project name>` on Windows, `~/dev/inbox/<project name>` on macOS). Explain that the inbox is the
    folder where new material waits, under its original names, until it is deposited.
-2. **The blanks.** Fill in, from the answers: `AGENTS.md` (the project's title and paragraph, rule 7 on who is never
+   Then ask **what the project's material will mostly be**, and propose the layers it needs, with the reason for each
+   one left out. The full chain (`raw/`, then `sources/` with a card per source, then pages in `kb/` with footnotes)
+   pays off for long material with much irrelevant detail: transcripts, e-mails, reports, papers. A project that is
+   mainly software, or mainly online research, does not need `sources/` and `kb/` until such material arrives; its
+   research files, plans and products can cite their sources directly. Two parts are kept in every project: the
+   author's own messages deposited word for word (class `K`), and `DECISIONS.md`, each decision with its reason.
+2. **The blanks.** Remove the folders the author chose to leave out, and write a short section "What this base mainly
+   is" at the top of `AGENTS.md` that names the layers kept and why, so that a later session does not fill the others
+   for form's sake. Fill in, from the answers: `AGENTS.md` (the project's title and paragraph, rule 7 on who is never
    named, and the section "The author": offer, as the suggested answer, what the author's own instructions in the user
    folder say about them, and ask the author to confirm or change it), `README.md` (the name
    and today's date), and `tools/config.py` (the inbox path). Create the inbox folder. Leave a blank the author cannot

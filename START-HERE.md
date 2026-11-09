@@ -88,7 +88,10 @@ other people should go into what the agent reads until the person knows which te
 
 Explain: a knowledge base is a folder for one project, in which every original file is kept unchanged, turned into
 text, and summarised with a reference to the passage it came from, so that anything the agent writes later can be
-traced to a source. The template in `knowledge-base/` becomes that folder.
+traced to a source. The template in `knowledge-base/` becomes that folder. Not every project needs every layer: the
+first conversation in the new folder asks what the material will be, and removes the layers it will not use (a project
+that is mainly software or online research usually keeps only `raw/` for the person's own messages, `research/`,
+`plan/`, `products/` and the table of decisions).
 
 1. Ask for a short name for the project: lower case, hyphens instead of spaces, for example `ventilation-study`.
 2. Explain why the project goes in `C:\dev\projects\<name>` (macOS: `~/dev/projects/<name>`) and not in OneDrive,
