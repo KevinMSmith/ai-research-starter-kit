@@ -1,7 +1,9 @@
 # A starter kit for working with an AI agent in research
 
 *For colleagues who want to work the way I described in the seminar "Working with an AI agent in research" (DTU,
-3 November 2026). You do not need to know how to program. Until August 2026 I did not know Python, had barely used VS
+3 November 2026). The slides of that talk are in this kit as a PDF:
+[slides/2026-11-03-working-with-an-ai-agent-in-research.pdf](slides/2026-11-03-working-with-an-ai-agent-in-research.pdf).
+You do not need to know how to program. Until August 2026 I did not know Python, had barely used VS
 Code, and did not know how to download a project from GitHub. Everything in this kit was made in conversation with the
 agent. The agent also sets the kit up for you, and it explains each step in plain words before it takes it.*
 
