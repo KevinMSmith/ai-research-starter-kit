@@ -10,5 +10,5 @@ argument-hint: "<the question>"
    number, reason or quotation in the answer.
 2. Answer in plain sentences. Cite every statement (`M03¶12`, or the page in `kb/`). Mark what you infer as inferred.
 3. Say what the knowledge base does not hold that the question needs, and who or what could supply it.
-4. If the answer revealed a gap or an error in `kb/`, list it at the end as a proposed change. Do not change `kb/`
-   without the author's word.
+4. If the answer revealed a gap or an error in `kb/`, fix a clear error with its footnote and list it; list a larger
+   change at the end as a proposed change.

@@ -46,8 +46,8 @@ in which it arrived. `python tools/deposit.py next K` gives the next free number
 | `D` | a document: a report, a proposal, a note, a drawing | as its author and date warrant |
 | `R` | a paper or a book chapter | the published claim |
 | `X` | data: a spreadsheet, a measurement series, a model or its results | measured or simulated, as labelled |
-| `S` | a standard or another licensed text | read, never quoted into a product, never redistributed |
-| `C` | a colleague's material | context for what others already hold; never quoted as a source |
+| `S` | a standard or another licensed text | read; never redistributed or published in full; a product may quote a short clause with its reference |
+| `C` | what a colleague wrote or said | cited with the colleague's name when used, unless the owner of this repository says it is context only (read for background, not cited) |
 | ‹add a class› | ‹when a third item of a new kind arrives› | |
 
 A later version of a deposited document is a new entry beside the old one (`D04-r2`); the difference between the two
@@ -74,9 +74,10 @@ Each rule exists because an agent gets it wrong without it.
    positions.
 6. **Only what is sure.** A figure from a standard, a regulation or a datasheet is checked against the deposited
    document before it enters a product. A number from memory is a number to check.
-7. **People.** Participants are named by their role in the project, never assessed. ‹Add who is never named, for
-   example students, residents, patients, or anyone who has not agreed.› *Why:* what the agent reads is sent to the
-   provider, and an opinion about a named person is personal data under the GDPR.
+7. **People.** People are named as the sources name them. ‹Who is never named in this project, for example students,
+   residents, patients, or anyone who has not agreed.› A name is withheld only by a rule the author set. ‹Where the
+   project needs it: people are never assessed. *Why:* what the agent reads is sent to the provider, and an opinion
+   about a named person is personal data under the GDPR.›
 8. **One home per fact.** Each fact lives on one page of `kb/`; every other mention links to it. No page has a word
    limit; a page is as long as its content needs.
 9. **A folder or a page type is made when its third entry would be written**, not before. *Why:* a structure invented

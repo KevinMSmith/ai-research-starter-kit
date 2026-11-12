@@ -1,6 +1,6 @@
 ---
 name: deposit
-description: Use when the author says a file is in the inbox for this knowledge base, or names one to deposit: a transcript, a dictation, a document, an e-mail, a paper, data. Deposits it into raw/ under the next ID, renders it to text, writes its card, and commits.
+description: Use when a file is in the inbox for this knowledge base, or the author names one to deposit: a transcript, a dictation, a document, an e-mail, a paper, data. Deposits it into raw/ under the next ID, renders it to text, writes its card, and commits.
 ---
 
 # Deposit: from the inbox into raw/, rendered, carded, committed
@@ -14,11 +14,14 @@ description: Use when the author says a file is in the inbox for this knowledge 
 2. **Deposit.** `python tools/deposit.py add "<file name in the inbox>" <ID> "<what it is, in one line>"`, then
    `python tools/deposit.py verify`.
 3. **Render.** `python tools/extract.py <ID>`. If a package is missing, the script names the command that installs
-   it; ask before installing. A kind of file the script does not render is read directly if possible.
+   it. Install it for this user or in the project's environment, and name the install in the log block; ask only
+   before a system-wide install, a new account or a paid tool. A kind of file the script does not render is read
+   directly if possible.
 4. **Card.** Read `sources/<ID>.md` and nothing else, and write `sources/cards/<ID>.md` from `templates/card.md`: what
    the source holds, item by item, each with its anchor (`¶n`); what was proposed, decided and disagreed, kept apart;
    every number with its unit and basis; the questions it raises. Write "None" under an empty heading. A card is as
-   long as the source's content needs. Quote nothing longer than a phrase.
+   long as the source's content needs. Quote where the exact words matter: a definition, a number, a decision, a
+   learning objective, the author's own words.
 5. **Commit** with a message that names the ID and what it is, for example "Deposit M04: project meeting of
    3 November 2026, transcript and card".
 6. **Report** in two or three sentences what the source holds that is new for the project, and anything in it that
